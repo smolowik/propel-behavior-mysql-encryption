@@ -1,0 +1,24 @@
+{
+    "name": "smolowik/propel-behavior-mysql-encryption",
+    "description": "Behavior which allows you to encrypt columns using mysql",
+    "type" : "propel-behavior",
+    "extra": {
+        "name": "mysql_encryption",
+        "class": "\\behavior\\MysqlEncryptionBehavior"
+    },
+    "require": {
+        "propel/propel": "~2.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksander Smołowik",
+            "email": "smolowik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Smolowik\\Propel\\":"src"
+        }
+    }
+}
