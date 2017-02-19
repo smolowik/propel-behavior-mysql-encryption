@@ -4,7 +4,7 @@
     "type" : "propel-behavior",
     "extra": {
         "name": "mysql_encryption",
-        "class": "\\behavior\\MysqlEncryptionBehavior"
+        "class": "\\src\\Behavior\\MysqlEncryptionBehavior"
     },
     "require": {
         "propel/propel": "~2.0@dev"
