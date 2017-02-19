@@ -4,7 +4,7 @@
     "type" : "propel-behavior",
     "extra": {
         "name": "mysql_encryption",
-        "class": "\\src\\Behavior\\MysqlEncryptionBehavior"
+        "class": "Smolowik\\Propel\\Behavior\\MysqlEncryptionBehavior"
     },
     "require": {
         "propel/propel": "~2.0@dev"
