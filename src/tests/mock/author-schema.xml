@@ -1,0 +1,17 @@
+<database name="default" defaultIdMethod="native"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="http://xsd.propelorm.org/1.6/database.xsd"
+          namespace=""
+        >
+
+    <table name="author" phpName="Author">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="first_name" type="varchar" size="50" required="true"/>
+        <column name="last_name" type="varchar" size="255" required="true"/>
+        <column name="email" type="varchar" size="100" required="true"/>
+        <behavior name="mysql_encryption">
+            <parameter name="columns" value="first_name,last_name,email" />
+        </behavior>
+    </table>
+
+</database>

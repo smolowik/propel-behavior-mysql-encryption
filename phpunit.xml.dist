@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         bootstrap="src/tests/bootstrap.php"
+>
+
+    <testsuites>
+        <testsuite name="Propel mysql_encryption behavior test suite">
+            <directory>src/tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <groups>
+        <exclude>
+            <group>pgsql</group>
+            <group>mysql</group>
+        </exclude>
+    </groups>
+
+    <php>
+        <env name="DB" value="mysql"/> <!-- mysql, sqlite, pgsql -->
+        <env name="DB_USER" value=""/>
+        <env name="DB_PW" value=""/>
+    </php>
+
+
+    <filter>
+        <whitelist>
+            <directory>src</directory>
+            <exclude>
+                <directory>./src/tests</directory>
+                <directory>./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+</phpunit>
